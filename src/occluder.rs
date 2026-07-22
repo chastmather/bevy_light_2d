@@ -10,7 +10,7 @@ use bevy::{
 
 /// A light occluder that prevents light passing through it, casting shadows.
 ///
-/// This is commonly used as a component within [`LightOcluder2dBundle`].
+/// This is commonly used as a component within [`LightOccluder2dBundle`].
 #[derive(Default, Component)]
 #[require(SyncToRenderWorld, Transform, Visibility, VisibilityClass)]
 #[component(on_add = visibility::add_visibility_class::<LightOccluder2d>)]
